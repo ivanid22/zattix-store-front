@@ -12,6 +12,27 @@
   src: local("Gotham Rounded Light"), url("../fonts/gotham-rounded-light.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Helvetica Neue Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue Light"), url("../fonts/helvetica-neue-light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue Medium"), url("../fonts/helvetica-neue-medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Neue Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Helvetica Neue Bold"), url("../fonts/helvetica-neue-bold.woff") format("woff");
+}
+
 :root {
   --color-1: #d35266;
   --color-2: #888;
@@ -20,6 +41,7 @@
 
 header {
   width: 100%;
+  background-color: var(--color-1);
 }
 
 html {
@@ -132,4 +154,58 @@ nav {
   .nav-element > span {
     margin-left: 10px;
   }
+}
+
+.search-section-container {
+  color: white;
+  min-width: 480px;
+  max-width: 1650px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-section-heading {
+  padding: 40px 0 20px 0;
+  text-align: center;
+}
+
+.search-section-heading > h1 {
+  font: 72px "Gotham Bold", sans-serif;
+  margin-bottom: 10px;
+}
+
+.search-section-heading > h3 {
+  font: 18px "Gotham Rounded Light", sans-serif;
+}
+
+.search-fields-container {
+  display: flex;
+  font: 22px "Helvetica Neue Medium", sans-serif;
+  width: 90%;
+  max-width: 1080px;
+  margin-bottom: 20px;
+}
+
+.search-fields-container > * {
+  height: 55px;
+  color: var(--color-2);
+}
+
+.search-text-input {
+  position: relative;
+  text-align: center;
+  flex: 1 1 auto;
+  min-width: 50px;
+  margin-left: 1px;
+  border: 1px solid var(--color-2);
+}
+
+.search-fields-container button {
+  background-color: var(--color-3);
+  font-size: 16px;
+  border: none;
+  margin-left: 20px;
+  padding: 10px 20px;
 }
