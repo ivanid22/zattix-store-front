@@ -12,11 +12,6 @@
   src: local("Gotham Rounded Light"), url("../fonts/gotham-rounded-light.woff") format("woff");
 }
 
-html {
-  height: 100%;
-  width: 100%;
-}
-
 :root {
   --color-1: #d35266;
   --color-2: #888;
@@ -25,6 +20,14 @@ html {
 
 header {
   width: 100%;
+}
+
+html {
+  min-width: 480px;
+}
+
+body {
+  min-width: 480px;
 }
 
 nav {
@@ -36,6 +39,10 @@ nav {
 }
 
 .nav-content {
+  min-width: 480px;
+  max-width: 1650px;
+  width: 85%;
+  margin: 0 auto;
   display: flex;
   height: 100%;
   justify-content: space-between;
@@ -43,11 +50,16 @@ nav {
 
 .nav-links {
   display: flex;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .nav-links > * {
   height: 30px;
+}
+
+.nav-logo {
+  min-width: 93px;
 }
 
 .nav-logo > i {
@@ -62,13 +74,13 @@ nav {
   color: var(--color-2);
   display: flex;
   align-items: center;
-  margin-left: 40px;
+  margin-left: 10px;
 }
 
 .nav-element > span {
-  white-space: normal;
+  white-space: nowrap;
   font: 16px "Gotham Rounded Light", sans-serif;
-  margin-left: 15px;
+  margin-left: 5px;
 }
 
 .nav-links .nav-element:nth-child(2) {
@@ -78,5 +90,46 @@ nav {
 .nav-links .nav-element:last-child {
   color: white;
   background-color: var(--color-1);
-  padding: 5px 10px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.nav-auth {
+  color: var(--color-2);
+  display: flex;
+  align-items: center;
+}
+
+.nav-auth > span {
+  margin-left: 10px;
+  color: white;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .nav-element > span {
+    font-size: 14px;
+  }
+
+  .nav-logo > span {
+    font-size: 16px;
+  }
+
+  .nav-links .nav-element:last-child {
+    display: none;
+  }
+
+  .nav-auth {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-element {
+    margin-left: 30px;
+  }
+
+  .nav-element > span {
+    margin-left: 10px;
+  }
 }
