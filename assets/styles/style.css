@@ -184,7 +184,7 @@ nav {
   display: flex;
   font: 22px "Helvetica Neue Medium", sans-serif;
   width: 90%;
-  max-width: 1080px;
+  max-width: 1536px;
   margin-bottom: 20px;
 }
 
@@ -208,4 +208,84 @@ nav {
   border: none;
   margin-left: 20px;
   padding: 10px 20px;
+}
+
+.section-container {
+  min-width: 480px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.hot-ads-section {
+  color: var(--color-2);
+  height: 100px;
+  width: 100%;
+}
+
+.hot-ads-section h3 {
+  font: 16px "Helvetica Neue Medium", sans-serif;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.hot-ads-section img {
+  max-height: 300px;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+}
+
+.slider-container i {
+  color: var(--color-1);
+  border: 1px solid var(--color-2);
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.hot-ad-description {
+  max-height: 300px;
+  justify-content: space-between;
+}
+
+.hot-ad-description h4 {
+  font: 20px "Gotham Bold", sans-serif;
+  color: var(--color-1);
+}
+
+.hot-ad-description p {
+  font-size: 14px;
+}
+
+.ad-details {
+  justify-self: flex-end;
+}
+
+.ad-details > p {
+  margin: 0;
+}
+
+.hot-ad-actions button {
+  background-color: var(--color-1);
+  border: none;
+  color: white;
+  font: 14px "Gotham Bold", sans-serif;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.hot-ad-actions button:first-child {
+  border-radius: 5px 0 0 5px;
+  border-right: solid 1px var(--color-3);
+}
+
+.hot-ad-actions button:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+@media (max-width: 768px) {
+  .hot-ads-section {
+    display: none;
+  }
 }
