@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Gotham Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham Bold"), url("../fonts/gotham-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gotham Rounded Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gotham Rounded Light"), url("../fonts/gotham-rounded-light.woff") format("woff");
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --color-1: #d35266;
+  --color-2: #888;
+  --color-3: #383838;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  color: white;
+  font: 14px "Gotham Bold", sans-serif;
+  text-transform: uppercase;
+  background-color: var(--color-3);
+  height: 75px;
+}
+
+.nav-content {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links > * {
+  height: 30px;
+}
+
+.nav-logo > i {
+  color: var(--color-1);
+}
+
+.nav-logo > span {
+  font-size: 16px;
+}
+
+.nav-element {
+  color: var(--color-2);
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.nav-element > span {
+  white-space: normal;
+  font: 16px "Gotham Rounded Light", sans-serif;
+  margin-left: 15px;
+}
+
+.nav-links .nav-element:nth-child(2) {
+  color: var(--color-1);
+}
+
+.nav-links .nav-element:last-child {
+  color: white;
+  background-color: var(--color-1);
+  padding: 5px 10px;
+}
