@@ -9,28 +9,32 @@
   font-family: "Gotham Rounded Light";
   font-style: normal;
   font-weight: normal;
-  src: local("Gotham Rounded Light"), url("../fonts/gotham-rounded-light.woff") format("woff");
+  src: local("Gotham Rounded Light"),
+    url("../fonts/gotham-rounded-light.woff") format("woff");
 }
 
 @font-face {
   font-family: "Helvetica Neue Light";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica Neue Light"), url("../fonts/helvetica-neue-light.woff") format("woff");
+  src: local("Helvetica Neue Light"),
+    url("../fonts/helvetica-neue-light.woff") format("woff");
 }
 
 @font-face {
   font-family: "Helvetica Neue Medium";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica Neue Medium"), url("../fonts/helvetica-neue-medium.woff") format("woff");
+  src: local("Helvetica Neue Medium"),
+    url("../fonts/helvetica-neue-medium.woff") format("woff");
 }
 
 @font-face {
   font-family: "Helvetica Neue Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica Neue Bold"), url("../fonts/helvetica-neue-bold.woff") format("woff");
+  src: local("Helvetica Neue Bold"),
+    url("../fonts/helvetica-neue-bold.woff") format("woff");
 }
 
 :root {
@@ -464,6 +468,10 @@ footer {
   text-transform: uppercase;
 }
 
+.footer-links-container {
+  order: 1;
+}
+
 .footer-links-heading {
   color: var(--color-1);
   border-bottom: 1px solid var(--color-1);
@@ -510,8 +518,16 @@ footer {
   width: 100px;
 }
 
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .footer-content {
     grid-template-columns: repeat(4, minmax(200px, 1fr));
+  }
+
+  .footer-links-container {
+    order: none;
+  }
+
+  .footer-settings-container {
+    order: 3;
   }
 }
