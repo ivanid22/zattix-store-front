@@ -1,0 +1,247 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-content">
+          <div class="nav-links">
+            <div class="nav-logo">
+              <i class="fas fa-music fa-2x"></i>
+              <span>zattix</span>
+            </div>
+            <div class="nav-element">
+              <i class="fas fa-home"></i>
+              <span>home</span>
+            </div>
+            <div class="nav-element">
+              <i class="fas fa-cubes"></i>
+              <span>collections</span>
+            </div>
+            <div class="nav-element">
+              <i class="fas fa-shopping-cart"></i>
+              <span>purchase list</span>
+            </div>
+            <div class="nav-element">
+              <span>post an ad</span>
+            </div>
+          </div>
+          <div class="nav-auth">
+            <i class="fas fa-envelope"></i>
+            <span>John Doe</span>
+          </div>
+        </div>
+      </nav>
+      <div class="search-section-container">
+        <i class="fas fa-music fa-10x"></i>
+        <div class="search-section-heading">
+          <h1>ZATTIX</h1>
+          <h3>Buying and selling couldn't be simpler than this!</h3>
+        </div>
+        <div class="search-fields-container">
+          <input
+            type="text"
+            name="department"
+            id="search-department"
+            class="search-text-input"
+          />
+          <input
+            type="text"
+            name="terms"
+            id="search-terms"
+            class="search-text-input"
+          />
+          <input
+            type="text"
+            name="location"
+            id="search-location"
+            class="search-text-input"
+          />
+          <button type="submit">Search</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-fluid search-page-content">
+        <div class="row">
+          <div
+            class="col-12 col-md-3 search-filters-container d-flex flex-column"
+          >
+            <div class="search-filters-subsection d-flex">
+              <div class="radio-field">
+                <input type="radio" name="item-condition" id="contidion-new" />
+                <label for="condition-new">New</label>
+              </div>
+              <div class="radio-field">
+                <input type="radio" name="item-condition" id="condition-used" />
+                <label for="condition-used">Used</label>
+              </div>
+            </div>
+            <div class="filters-subsection-heading">
+              <h4>Type</h4>
+            </div>
+            <div class="search-filters-subsection d-flex">
+              <div>
+                <input type="checkbox" name="type-cd" id="cd" />
+                <label for="cd">CD</label>
+              </div>
+              <div>
+                <input type="checkbox" name="type-vinyl" id="vinyl" />
+                <label for="cd">Vinyl</label>
+              </div>
+              <div>
+                <input type="checkbox" name="type-lp" id="lp" />
+                <label for="cd">LP</label>
+              </div>
+              <div>
+                <input type="checkbox" name="type-single" id="single" />
+                <label for="cd">Single</label>
+              </div>
+            </div>
+            <div class="filters-subsection-heading">
+              <h4>Release Decade</h4>
+            </div>
+            <div class="search-filters-subsection d-flex">
+              <div>
+                <input type="checkbox" name="type-dur1" id="dur1" />
+                <label for="cd">1980s</label>
+              </div>
+              <div>
+                <input type="checkbox" name="type-dur2" id="dur2" />
+                <label for="cd">1990s</label>
+              </div>
+              <div>
+                <input type="checkbox" name="type-dur3" id="dur3" />
+                <label for="cd">2000s</label>
+              </div>
+              <div>
+                <input type="checkbox" name="type-dur4" id="dur4" />
+                <label for="cd">2010s</label>
+              </div>
+            </div>
+            <div class="filters-subsection-heading">
+              <h4>Price</h4>
+            </div>
+            <div class="search-filters-subsection d-flex">
+              <div>
+                <input type="checkbox" name="type-price1" id="price1" />
+                <label for="cd">$10-$100</label>
+              </div>
+              <div>
+                <input type="checkbox" name="type-price2" id="price2" />
+                <label for="cd">$100-$500</label>
+              </div>
+              <div>
+                <input type="checkbox" name="type-price3" id="price3" />
+                <label for="cd">$500-$1000</label>
+              </div>
+              <div>
+                <input type="checkbox" name="type-price4" id="price4" />
+                <label for="cd">$1000+</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-9 search-results-container"></div>
+        </div>
+      </div>
+    </main>
+    <footer class="container-fluid">
+      <div class="footer-content">
+        <div class="footer-company-info d-flex flex-column">
+          <div class="footer-logo-container d-flex">
+            <i class="fas fa-music fa-3x"></i>
+            <h3>zattix</h3>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cum,
+            eius molestiae quae tempora dolorum, laborum in cupiditate
+            laboriosam maxime voluptatibus fugit voluptates? Unde, a! Unde hic
+            laboriosam nemo omnis.
+          </p>
+        </div>
+        <div class="footer-links-container d-flex flex-column">
+          <div class="footer-links-heading">
+            <h3>categories</h3>
+          </div>
+          <div class="links-container">
+            <div class="links-column d-flex flex-column">
+              <a href="#">lorem</a>
+              <a href="#">lorem</a>
+              <a href="#">lorem</a>
+              <a href="#">lorem</a>
+              <a href="#">lorem</a>
+              <a href="#">lorem</a>
+            </div>
+            <div class="links-column d-flex flex-column">
+              <a href="#">lorem</a>
+              <a href="#">lorem</a>
+              <a href="#">lorem</a>
+              <a href="#">lorem</a>
+              <a href="#">lorem</a>
+              <a href="#">lorem</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="footer-links-container d-flex flex-column">
+            <div class="footer-links-heading">
+              <h3>navigation</h3>
+            </div>
+            <div class="links-column d-flex flex-column">
+              <a href="#">Home</a>
+              <a href="#">Sign in</a>
+              <a href="#">Sign up</a>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">FAQ</a>
+              <a href="#">Help</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-settings-container d-flex flex-column">
+          <div class="footer-settings-item d-flex">
+            <span>country</span>
+            <button>Switzerland</button>
+          </div>
+          <div class="footer-settings-item d-flex">
+            <span>language</span>
+            <button>English</button>
+          </div>
+          <div class="footer-settings-item d-flex">
+            <span>currency</span>
+            <button>USD</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/c0ee282a11.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

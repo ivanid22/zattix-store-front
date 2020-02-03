@@ -71,8 +71,9 @@ main {
   border-bottom: 1px solid #ccc;
 }
 
-main div:first-child {
+.first-section {
   background-color: white;
+  padding: 20px 0 40px 0;
 }
 
 .hidden {
@@ -538,5 +539,49 @@ footer {
 
   .footer-settings-container {
     order: 3;
+  }
+}
+
+.search-page-content {
+  background-color: #f5f5f5;
+}
+
+.search-filters-container {
+  font: 14px "Helvetica Neue Light", sans-serif;
+  color: var(--color-2);
+}
+
+.search-filters-subsection {
+  padding: 10px 0 0 0;
+  justify-content: center;
+}
+
+.search-filters-subsection > * {
+  padding: 0 10px;
+}
+
+.search-filters-container h4 {
+  font: 14px "Gotham Bold", sans-serif;
+  color: var(--color-3);
+  text-align: center;
+}
+
+.filters-subsection-heading {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+@media (min-width: 768px) {
+  .search-filters-container {
+    padding: 40px;
+    border-right: 1px solid #ccc;
+  }
+
+  .search-filters-subsection {
+    flex-direction: column;
+  }
+
+  .search-filters-container h4 {
+    text-align: start;
   }
 }
