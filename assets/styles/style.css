@@ -176,6 +176,7 @@ main div:first-child {
 }
 
 .search-section-container {
+  position: relative;
   color: white;
   min-width: 480px;
   max-width: 1650px;
@@ -183,6 +184,14 @@ main div:first-child {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.search-section-container > i {
+  position: absolute;
+  height: 150%;
+  color: #ca4a5f;
+  left: 12.5%;
+  top: 25%;
 }
 
 .search-section-heading {
