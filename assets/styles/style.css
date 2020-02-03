@@ -63,6 +63,8 @@ nav {
 main {
   width: 100%;
   background-color: #f5f5f5;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #ccc;
 }
 
 main div:first-child {
@@ -431,5 +433,85 @@ main div:first-child {
 
   .slides-scroll {
     display: flex;
+  }
+}
+
+footer {
+  padding: 10px 20px;
+  color: var(--color-2);
+}
+
+.footer-content {
+  display: grid;
+  max-width: 1650px;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  gap: 5px;
+}
+
+.footer-content > * {
+  padding: 20px;
+}
+
+.footer-logo-container {
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.footer-logo-container h3 {
+  font: 30px "Gotham Bold", sans-serif;
+  margin-left: 30px;
+  text-transform: uppercase;
+}
+
+.footer-links-heading {
+  color: var(--color-1);
+  border-bottom: 1px solid var(--color-1);
+}
+
+.footer-links-heading h3 {
+  font: 14px "Helvetica Neue Bold", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.links-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.links-column a {
+  color: var(--color-2);
+  font: 14px "Helvetica Neue Bold", sans-serif;
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+.footer-settings-item {
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.footer-settings-item > span {
+  font: 14px "Helvetica Neue Bold", sans-serif;
+  color: var(--color-1);
+  text-transform: uppercase;
+  line-height: 35px;
+}
+
+.footer-settings-item > button {
+  padding: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: var(--color-2);
+  background-color: white;
+  font: 14px "Helvetica Neue Bold", sans-serif;
+  font-weight: bold;
+  width: 100px;
+}
+
+@media(min-width: 1024px) {
+  .footer-content {
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
   }
 }
