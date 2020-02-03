@@ -104,10 +104,6 @@ main {
   min-width: 93px;
 }
 
-.nav-logo > i {
-  color: var(--color-1);
-}
-
 .nav-logo > span {
   font-size: 16px;
 }
@@ -148,6 +144,10 @@ main {
   white-space: nowrap;
 }
 
+.logo-background-icon {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .nav-element > span {
     font-size: 14px;
@@ -173,6 +173,10 @@ main {
 
   .nav-element > span {
     margin-left: 10px;
+  }
+
+  .logo-background-icon {
+    display: initial;
   }
 }
 
@@ -295,7 +299,7 @@ main {
   margin: 0;
 }
 
-.hot-ad-actions button {
+.magenta-button {
   background-color: var(--color-1);
   border: none;
   color: white;
@@ -571,6 +575,78 @@ footer {
   border-bottom: 1px solid #ccc;
 }
 
+.search-results-content {
+  font: 14px "Helvetica Neue Medium", sans-serif;
+  color: var(--color-2);
+  width: 95%;
+  margin-right: auto;
+}
+
+.results-count {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 15px;
+}
+
+.results-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.result-item-img-container {
+  flex: 1 0 200px;
+  position: relative;
+  height: 200px;
+}
+
+.img-slides {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  opacity: 75%;
+}
+
+.img-slides > span {
+  color: var(--color-1);
+  background-color: var(--color-3);
+  padding: 10px;
+}
+
+.result-description {
+  position: relative;
+  font: 14px "Helvetica Neue Medium", sans-serif;
+  padding: 5px 20px 5px 40px;
+}
+
+.add-action {
+  color: var(--color-2);
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  padding: 5px 10px;
+  top: 5px;
+  right: 20px;
+  border: 1px solid #ccc;
+}
+
+.result-description h3 {
+  font-size: 20px;
+}
+
+.result-description h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color-1);
+}
+
+.result-last-row {
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.result-last-row button {
+  border-radius: 5px;
+}
+
 @media (min-width: 768px) {
   .search-filters-container {
     padding: 40px;
@@ -579,6 +655,14 @@ footer {
 
   .search-filters-subsection {
     flex-direction: column;
+  }
+
+  .search-results-container {
+    padding-left: 0;
+  }
+
+  .search-results-content {
+    border-right: 1px solid #ccc;
   }
 
   .search-filters-container h4 {
