@@ -12,6 +12,9 @@ The design layout is great. Simple in scope, but there's a lot of depth in each 
 - Flex and Grid as display methods for the elements.
 - Bootstrap Grid to lay out the main sections of the site.
 
+## Note
+To get to the search page of the site, click on "Search" on the index page.
+
 ## Built With
 
 - HTML
