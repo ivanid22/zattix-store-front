@@ -9,7 +9,8 @@
   font-family: "Gotham Rounded Light";
   font-style: normal;
   font-weight: normal;
-  src: local("Gotham Rounded Light"),
+  src:
+    local("Gotham Rounded Light"),
     url("../fonts/gotham-rounded-light.woff") format("woff");
 }
 
@@ -17,7 +18,8 @@
   font-family: "Helvetica Neue Light";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica Neue Light"),
+  src:
+    local("Helvetica Neue Light"),
     url("../fonts/helvetica-neue-light.woff") format("woff");
 }
 
@@ -25,7 +27,8 @@
   font-family: "Helvetica Neue Medium";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica Neue Medium"),
+  src:
+    local("Helvetica Neue Medium"),
     url("../fonts/helvetica-neue-medium.woff") format("woff");
 }
 
@@ -33,7 +36,8 @@
   font-family: "Helvetica Neue Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica Neue Bold"),
+  src:
+    local("Helvetica Neue Bold"),
     url("../fonts/helvetica-neue-bold.woff") format("woff");
 }
 
@@ -308,6 +312,21 @@ main {
   text-align: center;
 }
 
+.footer-settings-item > button {
+  padding: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: var(--color-2);
+  background-color: white;
+  font: 14px "Helvetica Neue Bold", sans-serif;
+  font-weight: bold;
+  width: 100px;
+}
+
+.result-last-row button {
+  border-radius: 5px;
+}
+
 .hot-ad-actions button:first-child {
   border-radius: 5px 0 0 5px;
   border-right: solid 1px var(--color-3);
@@ -521,17 +540,6 @@ footer {
   line-height: 35px;
 }
 
-.footer-settings-item > button {
-  padding: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  color: var(--color-2);
-  background-color: white;
-  font: 14px "Helvetica Neue Bold", sans-serif;
-  font-weight: bold;
-  width: 100px;
-}
-
 .footer-bottom {
   padding: 10px 0 0 10px;
   border-top: 1px solid #ccc;
@@ -670,10 +678,6 @@ footer {
 .result-last-row {
   margin-top: 20px;
   justify-content: space-between;
-}
-
-.result-last-row button {
-  border-radius: 5px;
 }
 
 .page-number-container {
