@@ -10,7 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/styles/style.css" />
-    <title>Document</title>
+    <title>Zattix</title>
   </head>
   <body>
     <header>
@@ -44,7 +44,6 @@
         </div>
       </nav>
       <div class="search-section-container">
-        <i class="fas fa-music fa-10x"></i>
         <div class="search-section-heading">
           <h1>ZATTIX</h1>
           <h3>Buying and selling couldn't be simpler than this!</h3>
@@ -68,7 +67,7 @@
             id="search-location"
             class="search-text-input"
           />
-          <button type="submit">Search</button>
+          <button type="submit" id="btn-search">Search</button>
         </div>
       </div>
     </header>
@@ -156,15 +155,33 @@
           </div>
           <div class="product-container d-flex flex-column">
             <img
-              src="./assets/images/nirvana_in_utero.jpg"
+              src="./assets/images/Michael_Jackson_-_Thriller.png"
               alt="album cover"
               class="img-fluid"
             />
             <div class="item-details-container d-flex flex-column">
-              <h3 class="item-name">In Utero - 12" 32RPM Long Play - Vinyl</h3>
+              <h3 class="item-name">Thriller - 12" 32RPM Long Play - Vinyl</h3>
               <span class="item-extra-info-1">New</span>
               <span class="item-extra-info-2"
-                ><strong>Artist: </strong>Nirvana</span
+                ><strong>Artist: </strong>Michael Jackson</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$300</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/coltrane-a-love-supreme.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">A Love Supreme - 12" 32RPM Long Play - Vinyl</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Artist: </strong>John Coltrane</span
               >
               <div class="item-actions-container d-flex">
                 <span class="item-action-add">+</span>
@@ -192,15 +209,15 @@
           </div>
           <div class="product-container d-flex flex-column">
             <img
-              src="./assets/images/nirvana_in_utero.jpg"
+              src="./assets/images/Michael_Jackson_-_Thriller.png"
               alt="album cover"
               class="img-fluid"
             />
             <div class="item-details-container d-flex flex-column">
-              <h3 class="item-name">In Utero - 12" 32RPM Long Play - Vinyl</h3>
+              <h3 class="item-name">Thriller - 12" 32RPM Long Play - Vinyl</h3>
               <span class="item-extra-info-1">New</span>
               <span class="item-extra-info-2"
-                ><strong>Artist: </strong>Nirvana</span
+                ><strong>Artist: </strong>Michael Jackson</span
               >
               <div class="item-actions-container d-flex">
                 <span class="item-action-add">+</span>
@@ -210,157 +227,15 @@
           </div>
           <div class="product-container d-flex flex-column">
             <img
-              src="./assets/images/nirvana_in_utero.jpg"
+              src="./assets/images/coltrane-a-love-supreme.jpg"
               alt="album cover"
               class="img-fluid"
             />
             <div class="item-details-container d-flex flex-column">
-              <h3 class="item-name">In Utero - 12" 32RPM Long Play - Vinyl</h3>
+              <h3 class="item-name">A Love Supreme - 12" 32RPM Long Play - Vinyl</h3>
               <span class="item-extra-info-1">New</span>
               <span class="item-extra-info-2"
-                ><strong>Artist: </strong>Nirvana</span
-              >
-              <div class="item-actions-container d-flex">
-                <span class="item-action-add">+</span>
-                <span class="item-extra-info-1">$300</span>
-              </div>
-            </div>
-          </div>
-          <div class="product-container d-flex flex-column">
-            <img
-              src="./assets/images/nirvana_in_utero.jpg"
-              alt="album cover"
-              class="img-fluid"
-            />
-            <div class="item-details-container d-flex flex-column">
-              <h3 class="item-name">In Utero - 12" 32RPM Long Play - Vinyl</h3>
-              <span class="item-extra-info-1">New</span>
-              <span class="item-extra-info-2"
-                ><strong>Artist: </strong>Nirvana</span
-              >
-              <div class="item-actions-container d-flex">
-                <span class="item-action-add">+</span>
-                <span class="item-extra-info-1">$300</span>
-              </div>
-            </div>
-          </div>
-          <div class="slides-scroll slides-scroll-right">
-            <i class="fas fa-chevron-right fa-lg"></i>
-          </div>
-        </div>
-      </section>
-      <section class="products-section">
-        <h1 class="hidden"></h1>
-        <div class="section-heading col-12 d-flex">
-          <i class="fas fa-record-vinyl fa-2x"></i>
-          <h3>Records</h3>
-          <h4>(Singles, LPs, CDs, Tapes)</h4>
-        </div>
-        <div class="col-12 products-container">
-          <div class="slides-scroll slides-scroll-left">
-            <i class="fas fa-chevron-left fa-lg"></i>
-          </div>
-          <div class="product-container d-flex flex-column">
-            <img
-              src="./assets/images/nirvana_in_utero.jpg"
-              alt="album cover"
-              class="img-fluid"
-            />
-            <div class="item-details-container d-flex flex-column">
-              <h3 class="item-name">In Utero - 12" 32RPM Long Play - Vinyl</h3>
-              <span class="item-extra-info-1">New</span>
-              <span class="item-extra-info-2"
-                ><strong>Artist: </strong>Nirvana</span
-              >
-              <div class="item-actions-container d-flex">
-                <span class="item-action-add">+</span>
-                <span class="item-extra-info-1">$300</span>
-              </div>
-            </div>
-          </div>
-          <div class="product-container d-flex flex-column">
-            <img
-              src="./assets/images/nirvana_in_utero.jpg"
-              alt="album cover"
-              class="img-fluid"
-            />
-            <div class="item-details-container d-flex flex-column">
-              <h3 class="item-name">In Utero - 12" 32RPM Long Play - Vinyl</h3>
-              <span class="item-extra-info-1">New</span>
-              <span class="item-extra-info-2"
-                ><strong>Artist: </strong>Nirvana</span
-              >
-              <div class="item-actions-container d-flex">
-                <span class="item-action-add">+</span>
-                <span class="item-extra-info-1">$300</span>
-              </div>
-            </div>
-          </div>
-          <div class="product-container d-flex flex-column">
-            <img
-              src="./assets/images/nirvana_in_utero.jpg"
-              alt="album cover"
-              class="img-fluid"
-            />
-            <div class="item-details-container d-flex flex-column">
-              <h3 class="item-name">In Utero - 12" 32RPM Long Play - Vinyl</h3>
-              <span class="item-extra-info-1">New</span>
-              <span class="item-extra-info-2"
-                ><strong>Artist: </strong>Nirvana</span
-              >
-              <div class="item-actions-container d-flex">
-                <span class="item-action-add">+</span>
-                <span class="item-extra-info-1">$300</span>
-              </div>
-            </div>
-          </div>
-          <div class="product-container d-flex flex-column">
-            <img
-              src="./assets/images/nirvana_in_utero.jpg"
-              alt="album cover"
-              class="img-fluid"
-            />
-            <div class="item-details-container d-flex flex-column">
-              <h3 class="item-name">In Utero - 12" 32RPM Long Play - Vinyl</h3>
-              <span class="item-extra-info-1">New</span>
-              <span class="item-extra-info-2"
-                ><strong>Artist: </strong>Nirvana</span
-              >
-              <div class="item-actions-container d-flex">
-                <span class="item-action-add">+</span>
-                <span class="item-extra-info-1">$300</span>
-              </div>
-            </div>
-          </div>
-          <div class="product-container d-flex flex-column">
-            <img
-              src="./assets/images/nirvana_in_utero.jpg"
-              alt="album cover"
-              class="img-fluid"
-            />
-            <div class="item-details-container d-flex flex-column">
-              <h3 class="item-name">In Utero - 12" 32RPM Long Play - Vinyl</h3>
-              <span class="item-extra-info-1">New</span>
-              <span class="item-extra-info-2"
-                ><strong>Artist: </strong>Nirvana</span
-              >
-              <div class="item-actions-container d-flex">
-                <span class="item-action-add">+</span>
-                <span class="item-extra-info-1">$300</span>
-              </div>
-            </div>
-          </div>
-          <div class="product-container d-flex flex-column">
-            <img
-              src="./assets/images/nirvana_in_utero.jpg"
-              alt="album cover"
-              class="img-fluid"
-            />
-            <div class="item-details-container d-flex flex-column">
-              <h3 class="item-name">In Utero - 12" 32RPM Long Play - Vinyl</h3>
-              <span class="item-extra-info-1">New</span>
-              <span class="item-extra-info-2"
-                ><strong>Artist: </strong>Nirvana</span
+                ><strong>Artist: </strong>John Coltrane</span
               >
               <div class="item-actions-container d-flex">
                 <span class="item-action-add">+</span>
@@ -377,8 +252,8 @@
         <h1 class="hidden"></h1>
         <div class="section-heading col-12 d-flex">
           <i class="fas fa-record-vinyl fa-2x"></i>
-          <h3>Records</h3>
-          <h4>(Singles, LPs, CDs, Tapes)</h4>
+          <h3>Appliances</h3>
+          <h4>(Turntables, CD Players)</h4>
         </div>
         <div class="col-12 products-container">
           <div class="slides-scroll slides-scroll-left">
@@ -386,15 +261,33 @@
           </div>
           <div class="product-container d-flex flex-column">
             <img
-              src="./assets/images/nirvana_in_utero.jpg"
+              src="./assets/images/crosley-1.jpg"
               alt="album cover"
               class="img-fluid"
             />
             <div class="item-details-container d-flex flex-column">
-              <h3 class="item-name">In Utero - 12" 32RPM Long Play - Vinyl</h3>
+              <h3 class="item-name">Crosley - Cruiser Deluxe Bluetooth Portable Turntable - Blue</h3>
               <span class="item-extra-info-1">New</span>
               <span class="item-extra-info-2"
-                ><strong>Artist: </strong>Nirvana</span
+                ><strong>Model: </strong>CR8005D-BL</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$249</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/victrola-1.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">Victrola - Bluetooth Stereo Turntable - Lambskin Gray</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Model: </strong>VSS-890BT-LGR</span
               >
               <div class="item-actions-container d-flex">
                 <span class="item-action-add">+</span>
@@ -404,15 +297,33 @@
           </div>
           <div class="product-container d-flex flex-column">
             <img
-              src="./assets/images/nirvana_in_utero.jpg"
+              src="./assets/images/crosley-1.jpg"
               alt="album cover"
               class="img-fluid"
             />
             <div class="item-details-container d-flex flex-column">
-              <h3 class="item-name">In Utero - 12" 32RPM Long Play - Vinyl</h3>
+              <h3 class="item-name">Crosley - Cruiser Deluxe Bluetooth Portable Turntable - Blue</h3>
               <span class="item-extra-info-1">New</span>
               <span class="item-extra-info-2"
-                ><strong>Artist: </strong>Nirvana</span
+                ><strong>Model: </strong>CR8005D-BL</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$249</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/victrola-1.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">Victrola - Bluetooth Stereo Turntable - Lambskin Gray</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Model: </strong>VSS-890BT-LGR</span
               >
               <div class="item-actions-container d-flex">
                 <span class="item-action-add">+</span>
@@ -422,15 +333,67 @@
           </div>
           <div class="product-container d-flex flex-column">
             <img
-              src="./assets/images/nirvana_in_utero.jpg"
+              src="./assets/images/crosley-1.jpg"
               alt="album cover"
               class="img-fluid"
             />
             <div class="item-details-container d-flex flex-column">
-              <h3 class="item-name">In Utero - 12" 32RPM Long Play - Vinyl</h3>
+              <h3 class="item-name">Crosley - Cruiser Deluxe Bluetooth Portable Turntable - Blue</h3>
               <span class="item-extra-info-1">New</span>
               <span class="item-extra-info-2"
-                ><strong>Artist: </strong>Nirvana</span
+                ><strong>Model: </strong>CR8005D-BL</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$249</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/victrola-1.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">Victrola - Bluetooth Stereo Turntable - Lambskin Gray</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Model: </strong>VSS-890BT-LGR</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$300</span>
+              </div>
+            </div>
+          </div>
+          <div class="slides-scroll slides-scroll-right">
+            <i class="fas fa-chevron-right fa-lg"></i>
+          </div>
+        </div>
+      </section>
+      <section class="products-section">
+        <h1 class="hidden"></h1>
+        <div class="section-heading col-12 d-flex">
+          <i class="fas fa-record-vinyl fa-2x"></i>
+          <h3>Speakers</h3>
+          <h4>(Speakers, Earphones)</h4>
+        </div>
+        <div class="col-12 products-container">
+          <div class="slides-scroll slides-scroll-left">
+            <i class="fas fa-chevron-left fa-lg"></i>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/magnolia-1.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">Klipsch - Reference Premiere Passive 2-Way Floor Speaker</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Model: </strong>1065796 RP8000F</span
               >
               <div class="item-actions-container d-flex">
                 <span class="item-action-add">+</span>
@@ -440,15 +403,16 @@
           </div>
           <div class="product-container d-flex flex-column">
             <img
-              src="./assets/images/nirvana_in_utero.jpg"
+              src="./assets/images/magnolia-2.jpg"
               alt="album cover"
               class="img-fluid"
             />
             <div class="item-details-container d-flex flex-column">
-              <h3 class="item-name">In Utero - 12" 32RPM Long Play - Vinyl</h3>
+              <h3 class="item-name">
+                Sony - Core Series 5" 3-Way Bookshelf Speakers (Pair) - Black</h3>
               <span class="item-extra-info-1">New</span>
               <span class="item-extra-info-2"
-                ><strong>Artist: </strong>Nirvana</span
+                ><strong>Model: </strong>SSCS5</span
               >
               <div class="item-actions-container d-flex">
                 <span class="item-action-add">+</span>
@@ -458,15 +422,15 @@
           </div>
           <div class="product-container d-flex flex-column">
             <img
-              src="./assets/images/nirvana_in_utero.jpg"
+              src="./assets/images/magnolia-1.jpg"
               alt="album cover"
               class="img-fluid"
             />
             <div class="item-details-container d-flex flex-column">
-              <h3 class="item-name">In Utero - 12" 32RPM Long Play - Vinyl</h3>
+              <h3 class="item-name">Klipsch - Reference Premiere Passive 2-Way Floor Speaker</h3>
               <span class="item-extra-info-1">New</span>
               <span class="item-extra-info-2"
-                ><strong>Artist: </strong>Nirvana</span
+                ><strong>Model: </strong>1065796 RP8000F</span
               >
               <div class="item-actions-container d-flex">
                 <span class="item-action-add">+</span>
@@ -476,15 +440,53 @@
           </div>
           <div class="product-container d-flex flex-column">
             <img
-              src="./assets/images/nirvana_in_utero.jpg"
+              src="./assets/images/magnolia-2.jpg"
               alt="album cover"
               class="img-fluid"
             />
             <div class="item-details-container d-flex flex-column">
-              <h3 class="item-name">In Utero - 12" 32RPM Long Play - Vinyl</h3>
+              <h3 class="item-name">
+                Sony - Core Series 5" 3-Way Bookshelf Speakers (Pair) - Black</h3>
               <span class="item-extra-info-1">New</span>
               <span class="item-extra-info-2"
-                ><strong>Artist: </strong>Nirvana</span
+                ><strong>Model: </strong>SSCS5</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$300</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/magnolia-1.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">Klipsch - Reference Premiere Passive 2-Way Floor Speaker</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Model: </strong>1065796 RP8000F</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$300</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/magnolia-2.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">
+                Sony - Core Series 5" 3-Way Bookshelf Speakers (Pair) - Black</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Model: </strong>SSCS5</span
               >
               <div class="item-actions-container d-flex">
                 <span class="item-action-add">+</span>
@@ -514,19 +516,19 @@
           <div class="links-container">
             <div class="links-column d-flex flex-column">
               <a href="#">lorem</a>
-              <a href="#">lorem</a>
-              <a href="#">lorem</a>
-              <a href="#">lorem</a>
-              <a href="#">lorem</a>
-              <a href="#">lorem</a>
+              <a href="#">ipsum</a>
+              <a href="#">dolor</a>
+              <a href="#">sit</a>
+              <a href="#">amet</a>
+              <a href="#">consectetur</a>
             </div>
             <div class="links-column d-flex flex-column">
               <a href="#">lorem</a>
-              <a href="#">lorem</a>
-              <a href="#">lorem</a>
-              <a href="#">lorem</a>
-              <a href="#">lorem</a>
-              <a href="#">lorem</a>
+              <a href="#">ipsum</a>
+              <a href="#">dolor</a>
+              <a href="#">sit</a>
+              <a href="#">amet</a>
+              <a href="#">consectetur</a>
             </div>
           </div>
         </div>
@@ -571,6 +573,12 @@
         </div>
       </div>
     </footer>
+    <script>
+      var button = document.getElementById('btn-search');
+      button.addEventListener("click", function() {
+        window.location.replace("./search.html");
+      });
+    </script>
     <script
       src="https://kit.fontawesome.com/c0ee282a11.js"
       crossorigin="anonymous"
