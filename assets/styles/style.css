@@ -337,13 +337,13 @@ main {
 }
 
 @media (max-width: 768px) {
-  .hot-ads-section {
+  .first-section {
     display: none;
   }
 }
 
 .section-heading {
-  padding: 15px 10px;
+  padding: 20px 10px;
   font: 12px "Gotham Bold", sans-serif;
   color: var(--color-2);
   align-items: center;
@@ -369,6 +369,10 @@ main {
   width: 100%;
   margin: 0 auto;
   background-color: #f5f5f5;
+}
+
+.products-section .section-heading:nth-child(2) {
+  margin-top: 0;
 }
 
 .products-container {
