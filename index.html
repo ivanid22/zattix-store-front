@@ -1,12 +1,603 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/styles/style.css">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Zattix</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-content">
+          <div class="nav-links">
+            <div class="nav-logo">
+              <i class="fas fa-music fa-2x"></i>
+              <span>zattix</span>
+            </div>
+            <div class="nav-element">
+              <i class="fas fa-home"></i>
+              <span>home</span>
+            </div>
+            <div class="nav-element">
+              <i class="fas fa-cubes"></i>
+              <span>collections</span>
+            </div>
+            <div class="nav-element">
+              <i class="fas fa-shopping-cart"></i>
+              <span>purchase list</span>
+            </div>
+            <div class="nav-element">
+              <span>post an ad</span>
+            </div>
+          </div>
+          <div class="nav-auth">
+            <i class="fas fa-envelope"></i>
+            <span>John Doe</span>
+          </div>
+        </div>
+      </nav>
+      <div class="search-section-container">
+        <div class="search-section-heading">
+          <h1>ZATTIX</h1>
+          <h3>Buying and selling couldn't be simpler than this!</h3>
+        </div>
+        <div class="search-fields-container">
+          <input
+            type="text"
+            name="department"
+            id="search-department"
+            class="search-text-input"
+          />
+          <input
+            type="text"
+            name="terms"
+            id="search-terms"
+            class="search-text-input"
+          />
+          <input
+            type="text"
+            name="location"
+            id="search-location"
+            class="search-text-input"
+          />
+          <button type="submit" id="btn-search">Search</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-fluid first-section">
+        <div class="section-container hot-ads-section">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-md-1 slider-container">
+                <i class="fas fa-chevron-left fa-2x"></i>
+              </div>
+              <div class="col-md-10">
+                <div class="row">
+                  <h3>hot ads</h3>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <img
+                      src="./assets/images/stp_purple.jpg"
+                      alt="album cover"
+                      class="img-thumbnail"
+                    />
+                  </div>
+                  <div class="col-md-6 hot-ad-description d-flex flex-column">
+                    <h4>Purple</h4>
+                    <p>
+                      While Purple features elements of grunge like its
+                      predecessor, Core, the album displays the band developing
+                      a sound influenced by other genres, such as the
+                      psychedelic rock evident in "Lounge Fly" and "Silvergun
+                      Superman", the country vibes of "Interstate Love Song" and
+                      blues rock elements of "Big Empty".
+                    </p>
+                    <div class="ad-details">
+                      <p><strong>Artist: </strong>Stone Temple Pilots</p>
+                      <p><strong>Length: </strong>46:53</p>
+                      <p><strong>Format: </strong>Vinyl LP - 12" - 33rpm</p>
+                    </div>
+                    <div class="hot-ad-actions d-flex">
+                      <button class="magenta-button">$275</button>
+                      <button class="magenta-button">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Purchase details</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-1 slider-container">
+                <i class="fas fa-chevron-right fa-2x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="products-section">
+        <h2 class="hidden">section heading</h2>
+        <div class="section-heading col-12 d-flex">
+          <i class="fas fa-record-vinyl fa-2x"></i>
+          <h3>Records</h3>
+          <h4>(Singles, LPs, CDs, Tapes)</h4>
+        </div>
+        <div class="col-12 products-container">
+          <div class="slides-scroll slides-scroll-left">
+            <i class="fas fa-chevron-left fa-lg"></i>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/nirvana_in_utero.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">In Utero - 12" 32RPM Long Play - Vinyl</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Artist: </strong>Nirvana</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$300</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/Michael_Jackson_-_Thriller.png"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">Thriller - 12" 32RPM Long Play - Vinyl</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Artist: </strong>Michael Jackson</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$300</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/coltrane-a-love-supreme.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">A Love Supreme - 12" 32RPM Long Play - Vinyl</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Artist: </strong>John Coltrane</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$300</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/nirvana_in_utero.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">In Utero - 12" 32RPM Long Play - Vinyl</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Artist: </strong>Nirvana</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$300</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/Michael_Jackson_-_Thriller.png"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">Thriller - 12" 32RPM Long Play - Vinyl</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Artist: </strong>Michael Jackson</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$300</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/coltrane-a-love-supreme.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">A Love Supreme - 12" 32RPM Long Play - Vinyl</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Artist: </strong>John Coltrane</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$300</span>
+              </div>
+            </div>
+          </div>
+          <div class="slides-scroll slides-scroll-right">
+            <i class="fas fa-chevron-right fa-lg"></i>
+          </div>
+        </div>
+      </section>
+      <section class="products-section">
+        <h2 class="hidden">section heading</h2>
+        <div class="section-heading col-12 d-flex">
+          <i class="fas fa-record-vinyl fa-2x"></i>
+          <h3>Appliances</h3>
+          <h4>(Turntables, CD Players)</h4>
+        </div>
+        <div class="col-12 products-container">
+          <div class="slides-scroll slides-scroll-left">
+            <i class="fas fa-chevron-left fa-lg"></i>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/crosley-1.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">Crosley - Cruiser Deluxe Bluetooth Portable Turntable - Blue</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Model: </strong>CR8005D-BL</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$249</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/victrola-1.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">Victrola - Bluetooth Stereo Turntable - Lambskin Gray</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Model: </strong>VSS-890BT-LGR</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$300</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/crosley-1.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">Crosley - Cruiser Deluxe Bluetooth Portable Turntable - Blue</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Model: </strong>CR8005D-BL</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$249</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/victrola-1.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">Victrola - Bluetooth Stereo Turntable - Lambskin Gray</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Model: </strong>VSS-890BT-LGR</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$300</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/crosley-1.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">Crosley - Cruiser Deluxe Bluetooth Portable Turntable - Blue</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Model: </strong>CR8005D-BL</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$249</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/victrola-1.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">Victrola - Bluetooth Stereo Turntable - Lambskin Gray</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Model: </strong>VSS-890BT-LGR</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$300</span>
+              </div>
+            </div>
+          </div>
+          <div class="slides-scroll slides-scroll-right">
+            <i class="fas fa-chevron-right fa-lg"></i>
+          </div>
+        </div>
+      </section>
+      <section class="products-section">
+        <h2 class="hidden">section heading</h2>
+        <div class="section-heading col-12 d-flex">
+          <i class="fas fa-record-vinyl fa-2x"></i>
+          <h3>Speakers</h3>
+          <h4>(Speakers, Earphones)</h4>
+        </div>
+        <div class="col-12 products-container">
+          <div class="slides-scroll slides-scroll-left">
+            <i class="fas fa-chevron-left fa-lg"></i>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/magnolia-1.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">Klipsch - Reference Premiere Passive 2-Way Floor Speaker</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Model: </strong>1065796 RP8000F</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$300</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/magnolia-2.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">
+                Sony - Core Series 5" 3-Way Bookshelf Speakers (Pair) - Black</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Model: </strong>SSCS5</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$300</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/magnolia-1.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">Klipsch - Reference Premiere Passive 2-Way Floor Speaker</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Model: </strong>1065796 RP8000F</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$300</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/magnolia-2.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">
+                Sony - Core Series 5" 3-Way Bookshelf Speakers (Pair) - Black</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Model: </strong>SSCS5</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$300</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/magnolia-1.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">Klipsch - Reference Premiere Passive 2-Way Floor Speaker</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Model: </strong>1065796 RP8000F</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$300</span>
+              </div>
+            </div>
+          </div>
+          <div class="product-container d-flex flex-column">
+            <img
+              src="./assets/images/magnolia-2.jpg"
+              alt="album cover"
+              class="img-fluid"
+            />
+            <div class="item-details-container d-flex flex-column">
+              <h3 class="item-name">
+                Sony - Core Series 5" 3-Way Bookshelf Speakers (Pair) - Black</h3>
+              <span class="item-extra-info-1">New</span>
+              <span class="item-extra-info-2"
+                ><strong>Model: </strong>SSCS5</span
+              >
+              <div class="item-actions-container d-flex">
+                <span class="item-action-add">+</span>
+                <span class="item-extra-info-1">$300</span>
+              </div>
+            </div>
+          </div>
+          <div class="slides-scroll slides-scroll-right">
+            <i class="fas fa-chevron-right fa-lg"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="container-fluid">
+      <div class="footer-content">
+        <div class="footer-company-info d-flex flex-column">
+          <div class="footer-logo-container d-flex">
+            <i class="fas fa-music fa-3x"></i>
+            <h3>zattix</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo cum, eius molestiae quae tempora dolorum, laborum in cupiditate laboriosam maxime voluptatibus fugit voluptates? Unde, a! Unde hic laboriosam nemo omnis.</p>
+        </div>
+        <div class="footer-links-container d-flex flex-column">
+          <div class="footer-links-heading">
+            <h3>categories</h3>
+          </div>
+          <div class="links-container">
+            <div class="links-column d-flex flex-column">
+              <a href="#">lorem</a>
+              <a href="#">ipsum</a>
+              <a href="#">dolor</a>
+              <a href="#">sit</a>
+              <a href="#">amet</a>
+              <a href="#">consectetur</a>
+            </div>
+            <div class="links-column d-flex flex-column">
+              <a href="#">lorem</a>
+              <a href="#">ipsum</a>
+              <a href="#">dolor</a>
+              <a href="#">sit</a>
+              <a href="#">amet</a>
+              <a href="#">consectetur</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="footer-links-container d-flex flex-column">
+            <div class="footer-links-heading">
+              <h3>navigation</h3>
+            </div>
+            <div class="links-column d-flex flex-column">
+              <a href="#">Home</a>
+              <a href="#">Sign in</a>
+              <a href="#">Sign up</a>
+              <a href="#">Terms & Conditions</a>
+              <a href="#">FAQ</a>
+              <a href="#">Help</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-settings-container d-flex flex-column">
+          <div class="footer-settings-item d-flex">
+            <span>country</span>
+            <button>Switzerland</button>
+          </div>
+          <div class="footer-settings-item d-flex">
+            <span>language</span>
+            <button>English</button>
+          </div>
+          <div class="footer-settings-item d-flex">
+            <span>currency</span>
+            <button>USD</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-legal">Copyright© 2015 Zattix.com. All rights reserved. Designed by Mohammed Awad</span>
+        <div class="footer-social d-flex">
+          <i class="fab fa-yahoo fa-lg"></i>
+          <i class="fab fa-google fa-lg"></i>
+          <i class="fab fa-linkedin-in fa-lg"></i>
+          <i class="fab fa-twitter fa-lg"></i>
+          <i class="fab fa-facebook-f fa-lg"></i>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var button = document.getElementById('btn-search');
+      button.addEventListener("click", function() {
+        window.location.replace("./search.html");
+      });
+    </script>
+    <script
+      src="https://kit.fontawesome.com/c0ee282a11.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
