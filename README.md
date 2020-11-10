@@ -1,4 +1,4 @@
-# Microverse: HTML/CSS Capstone Project.
+# Zattix: Store Front.
 
 > This is the last project in the HTML/CSS section of the main curriculum in the Microverse Full-Stack Development course. As such, it's been the project where I've tried to pour all the knowledge I've acquired over the entire section of the curriculum.
 
